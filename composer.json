@@ -1,0 +1,44 @@
+{
+    "name": "fschaechter/php-collection",
+    "description": "A library for handling sets of data",
+    "type": "library",
+    "keywords": [
+        "list",
+        "collection",
+        "filter",
+        "sorting"
+    ],
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "homepage": "http://github.com/fschaechter/php-collection",
+    "support": {
+        "issues": "https://github.com/fschaechter/php-collection/issues"
+    },
+    "authors": [
+        {
+            "name": "Fabian Schächter",
+            "email": "fabian@schaechter.info"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.10",
+        "ext-xdebug": ">=2.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.37",
+        "mockery/mockery": "0.9.1",
+        "squizlabs/php_codesniffer": "1.5.4",
+        "phploc/phploc": "2.0.6",
+        "pdepend/pdepend": "2.0.0",
+        "phpmd/phpmd": "2.0.0",
+        "sebastian/phpcpd": "2.0.1"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4":{
+            "Collection\\": "src/"
+        }
+    }
+}
