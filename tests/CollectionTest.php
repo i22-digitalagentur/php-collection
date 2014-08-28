@@ -146,4 +146,25 @@ class CollectionTest extends \PHPUnit_Framework_TestCase
         $actual = $this->collection->sort($sorter);
         $this->assertSame($newCollection, $actual);
     }
+
+    /**
+     * Ensures getFirst() returns null if the collection is empty.
+     */
+    public function testGetFirstShouldReturnNullForAnEmptyCollection()
+    {
+        $this->assertCount(0, $this->collection);
+        $this->assertNull($this->collection->getFirst());
+    }
+
+    /**
+     * Ensures getFirst() returns the first element of the colleciton.
+     */
+    public function testGetFirstShouldReturnFirstElementOfTheCollection()
+    {
+        $expected = "the first";
+        $data = array($expected, "the second");
+        $collection = new Collection($data);
+        $actual = $collection->getFirst();
+        $this->assertSame($expected, $actual);
+    }
 }

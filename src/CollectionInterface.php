@@ -63,4 +63,13 @@ interface CollectionInterface extends \IteratorAggregate, \ArrayAccess, \Seriali
      * @return void
      */
     public function uasort($cmp_function);
+
+    /**
+     * Get the first element of the collection.
+     *
+     * If the collection is empty, null will be returned.
+     *
+     * @return mixed
+     */
+    public function getFirst();
 }

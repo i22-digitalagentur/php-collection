@@ -161,6 +161,17 @@ This library is licensed under the terms of the GNU General Public License v3.
 Whats new?
 ----------
 
+### 2.1.0 Enhanced collection.
+
+Added method getFirst() to Collection. This makes it easier to access the first
+element of the collection.
+
+
+### 2.0.1 Fixed example.
+
+There was a bug in examples/example_sort.php.
+
+
 ### 2.0.0 Refactored comparators.
 
 The comparators moved from the namespace *\Collection\Sorter\Comparator* to

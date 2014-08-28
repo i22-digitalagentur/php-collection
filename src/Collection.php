@@ -60,4 +60,17 @@ class Collection extends \ArrayObject implements CollectionInterface
     {
         return $reducer->reduce($this);
     }
+
+    /**
+     * Get the first element of the collection.
+     *
+     * @return mixed
+     */
+    public function getFirst()
+    {
+        foreach ($this as $element) {
+            return $element;
+        }
+        return null;
+    }
 }
