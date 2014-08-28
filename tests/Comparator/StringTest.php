@@ -6,9 +6,9 @@
  * @package    Tests
  * @subpackage Collection
  */
-namespace Collection\Tests\Sorter\Comparator;
+namespace Collection\Tests\Comparator;
 
-use \Collection\Sorter\Comparator\GetterString;
+use \Collection\Comparator\String;
 
 /**
  * Test case for comparator String.
@@ -17,12 +17,12 @@ use \Collection\Sorter\Comparator\GetterString;
  * @package    Tests
  * @subpackage Collection
  */
-class GetterStringTest extends \PHPUnit_Framework_TestCase
+class StringTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * The comparator, a.k.a. system under test.
      *
-     * @var GetterString
+     * @var \Collection\Comparator\String
      */
     protected $comparator;
 
@@ -31,7 +31,7 @@ class GetterStringTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->comparator = new GetterString("meaningOfLife");
+        $this->comparator = new String();
     }
 
     /**
@@ -48,7 +48,7 @@ class GetterStringTest extends \PHPUnit_Framework_TestCase
     public function testComparatorShouldImplementComparatorInterface()
     {
         $this->assertInstanceOf(
-            '\Collection\Sorter\Comparator\ComparatorInterface',
+            '\Collection\Comparator\ComparatorInterface',
             $this->comparator
         );
     }
@@ -79,42 +79,9 @@ class GetterStringTest extends \PHPUnit_Framework_TestCase
     public function dataProviderCompareShouldReturnCorrectValue()
     {
         return array(
-            array(
-                $this->createMock("a"),
-                $this->createMock("b"),
-                -1,
-            ),
-            array(
-                $this->createMock("b"),
-                $this->createMock("1"),
-                49,
-            ),
-            array(
-                $this->createMock("a"),
-                $this->createMock("a"),
-                0,
-            ),
+            array("a", "b", -1),
+            array("b", "a", 1),
+            array("a", "a", 0)
         );
-    }
-
-    /**
-     * Creates a mock for SimpleClassInterface and makes sure the
-     * method "meaningOfLife" is called once an returns the given
-     * value.
-     *
-     * @param mixed $returnValue The value that the mock should return.
-     *
-     * @return \PHPUnit_Framework_MockObject_MockObject
-     */
-    protected function createMock($returnValue)
-    {
-        $mock = $this->getMock(
-            'Collection\Tests\Assets\SimpleClass',
-            array("meaningOfLife")
-        );
-        $mock->expects($this->once())
-            ->method("meaningOfLife")
-            ->will($this->returnValue($returnValue));
-        return $mock;
     }
 }

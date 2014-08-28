@@ -22,7 +22,7 @@ class SorterAbstractTest extends \PHPUnit_Framework_TestCase
      */
     public function testConstructorShouldSetTheComparatorAttribute()
     {
-        $comparator = $this->getMock('\Collection\Sorter\Comparator\ComparatorInterface');
+        $comparator = $this->getMock('\Collection\Comparator\ComparatorInterface');
         $sorter = $this->getMockForAbstractClass('\Collection\Sorter\SorterAbstract', array($comparator));
         $this->assertSame($comparator, $sorter->getComparator());
     }

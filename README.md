@@ -66,7 +66,7 @@ Now you can just iterate over the data.
 It would be nice if the collection is sorted.
 
     <?php
-    $comparator = new \Collection\Sorter\Comparator\String();
+    $comparator = new \Collection\Comparator\String();
     $sorter = new \Collection\Sorter\Uasort($comparator);
     $collection->sort($sorter);
 
@@ -156,6 +156,21 @@ License
 -------
 
 This library is licensed under the terms of the GNU General Public License v3.
+
+
+Whats new?
+----------
+
+### 2.0.0 Refactored comparators.
+
+The comparators moved from the namespace *\Collection\Sorter\Comparator* to
+*\Collection\Comparator*. This changed the API incompatibly with the prior version
+1.0.0.
+
+
+### 1.0.0 Started library.
+
+This is the initial project.
 
 
 [php]: https://php.net "PHP"

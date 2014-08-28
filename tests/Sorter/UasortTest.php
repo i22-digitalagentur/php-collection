@@ -38,7 +38,7 @@ class UasortTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->comparator = Mockery::mock('\Collection\Sorter\Comparator\ComparatorInterface');
+        $this->comparator = Mockery::mock('\Collection\Comparator\ComparatorInterface');
         $this->sorter = new Uasort($this->comparator);
     }
 

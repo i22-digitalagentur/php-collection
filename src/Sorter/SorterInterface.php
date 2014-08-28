@@ -9,7 +9,7 @@
 namespace Collection\Sorter;
 
 use Collection\CollectionInterface;
-use Collection\Sorter\Comparator\ComparatorInterface;
+use Collection\Comparator\ComparatorInterface;
 
 /**
  * Interface SorterInterface

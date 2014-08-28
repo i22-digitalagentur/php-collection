@@ -8,7 +8,7 @@
  */
 namespace Collection\Sorter;
 
-use \Collection\Sorter\Comparator\ComparatorInterface;
+use \Collection\Comparator\ComparatorInterface;
 
 /**
  * Abstract for SorterInterface.

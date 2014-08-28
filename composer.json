@@ -9,7 +9,7 @@
         "sorting"
     ],
     "license": "GPL-3.0",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "homepage": "http://github.com/fschaechter/php-collection",
     "support": {
         "issues": "https://github.com/fschaechter/php-collection/issues"
@@ -21,10 +21,10 @@
         }
     ],
     "require": {
-        "php": ">=5.3.10",
-        "ext-xdebug": ">=2.1.0"
+        "php": ">=5.3.10"
     },
     "require-dev": {
+        "ext-xdebug": ">=2.1.0",
         "phpunit/phpunit": "3.7.37",
         "mockery/mockery": "0.9.1",
         "squizlabs/php_codesniffer": "1.5.4",

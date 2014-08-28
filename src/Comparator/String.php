@@ -4,9 +4,9 @@
  *
  * @category   PHP-Collection
  * @package    Collection
- * @subpackage Sorter
+ * @subpackage Compartor
  */
-namespace Collection\Sorter\Comparator;
+namespace Collection\Comparator;
 
 /**
  * String comparator.
@@ -15,7 +15,7 @@ namespace Collection\Sorter\Comparator;
  *
  * @category   PHP-Collection
  * @package    Collection
- * @subpackage Sorter
+ * @subpackage Compartor
  */
 class String implements ComparatorInterface
 {

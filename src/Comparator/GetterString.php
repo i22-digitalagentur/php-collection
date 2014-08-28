@@ -4,16 +4,16 @@
  *
  * @category   PHP-Collection
  * @package    Collection
- * @subpackage Sorter
+ * @subpackage Compartor
  */
-namespace Collection\Sorter\Comparator;
+namespace Collection\Comparator;
 
 /**
  * Compares two objects based on the return value of a given getter.
  *
  * @category   PHP-Collection
  * @package    Collection
- * @subpackage Sorter
+ * @subpackage Comparator
  */
 class GetterString implements ComparatorInterface
 {
