@@ -167,4 +167,23 @@ class CollectionTest extends \PHPUnit_Framework_TestCase
         $actual = $collection->getFirst();
         $this->assertSame($expected, $actual);
     }
+
+    /**
+     * Ensures isEmpty() returns true if the collection is empty.
+     */
+    public function testIsEmptyShouldReturnTrueForAnEmptyCollection()
+    {
+        $this->assertCount(0, $this->collection);
+        $this->assertTrue($this->collection->isEmpty());
+    }
+
+    /**
+     * Ensures isEmpty() returns false if the collection has some entries.
+     */
+    public function testIsEmptyShouldReturnFalseForACollectionWithEntries()
+    {
+        $this->collection->append(1);
+        $this->assertGreaterThan(0, $this->collection->count());
+        $this->assertFalse($this->collection->isEmpty());
+    }
 }

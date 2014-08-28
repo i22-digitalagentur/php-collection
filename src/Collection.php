@@ -73,4 +73,14 @@ class Collection extends \ArrayObject implements CollectionInterface
         }
         return null;
     }
+
+    /**
+     * Checks if the collection is empty and has no elements.
+     *
+     * @return boolean
+     */
+    public function isEmpty()
+    {
+        return $this->count() == 0;
+    }
 }

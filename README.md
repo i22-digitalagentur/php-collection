@@ -161,6 +161,12 @@ This library is licensed under the terms of the GNU General Public License v3.
 Whats new?
 ----------
 
+### 2.2.0 Enhanced collection.
+
+Added isEmpty() to Collection, so you can check if the collection is empty or
+has some elements.
+
+
 ### 2.1.0 Enhanced collection.
 
 Added method getFirst() to Collection. This makes it easier to access the first

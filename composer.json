@@ -9,7 +9,7 @@
         "sorting"
     ],
     "license": "GPL-3.0",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "homepage": "http://github.com/fschaechter/php-collection",
     "support": {
         "issues": "https://github.com/fschaechter/php-collection/issues"

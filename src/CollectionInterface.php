@@ -72,4 +72,11 @@ interface CollectionInterface extends \IteratorAggregate, \ArrayAccess, \Seriali
      * @return mixed
      */
     public function getFirst();
+
+    /**
+     * Checks if the collection is empty and has no elements.
+     *
+     * @return boolean
+     */
+    public function isEmpty();
 }
