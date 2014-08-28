@@ -9,7 +9,7 @@
 include __DIR__ . "/bootstrap.php";
 
 use \Collection\Reducer\DistinctByGetter;
-use \Collection\Sorter\Comparator\String;
+use \Collection\Comparator\String;
 use \Collection\Sorter\Uasort;
 
 $reducer = new DistinctByGetter("getHome");
