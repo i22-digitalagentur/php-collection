@@ -161,6 +161,12 @@ This library is licensed under the terms of the GNU General Public License v3.
 Whats new?
 ----------
 
+### 2.3.0 Exceptions and a new filter.
+
+Added exception classes.
+Added a new filter for simple filtering of arrays.
+
+
 ### 2.2.0 Enhanced collection.
 
 Added isEmpty() to Collection, so you can check if the collection is empty or
