@@ -1,6 +1,6 @@
 <?php
 /**
- * How to use the reduce method.
+ * How to use a filter.
  *
  * I have a large collection of match data and i would like
  * to know how many times Köln was victorious at home and Leverkusen
