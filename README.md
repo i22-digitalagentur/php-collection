@@ -7,6 +7,7 @@ for filtering, sorting and reducing the data sets.
 The class Collection extends [PHP's][php] [ArrayObject][php-arrayobject] and so
 brings a little extra to the table.
 
+[![Build Status](https://travis-ci.org/fschaechter/php-collection.svg?branch=master)](https://travis-ci.org/fschaechter/php-collection)
 
 Installation
 ------------
