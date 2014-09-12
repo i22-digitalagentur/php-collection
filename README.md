@@ -20,7 +20,7 @@ You can just clone the repository and use it as you see fit or use
 Append the following line to the [require-key][composer-require-key] of your
 *composer.json* file.
 
-    "fschaechter/php-collection": "1.0.0"
+    "fschaechter/php-collection": "~2"
 
 
 Issues and bugs
@@ -161,6 +161,12 @@ This library is licensed under the terms of the GNU General Public License v3.
 
 Whats new?
 ----------
+
+### 2.3.1 Updated documention.
+
+Added Travis CI status image.
+Updated documentation.
+
 
 ### 2.3.0 Exceptions and a new filter.
 
